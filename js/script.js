@@ -119,6 +119,7 @@ document.querySelector(".menu-openner").addEventListener("click", ()=>{
 
 document.querySelector(".menu-closer").addEventListener("click", ()=>{
     document.querySelector("aside").style.left = "100vw"
+   
 })
 
 
@@ -193,6 +194,7 @@ function updateCart(){
         
     }else{
         document.querySelector("aside").classList.remove("show")
+        document.querySelector("aside").style.left = "100vw"
     }
     document.querySelector(".menu-openner span").innerHTML = cart.length
 }
